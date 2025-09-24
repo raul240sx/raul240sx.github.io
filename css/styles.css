@@ -1,9 +1,15 @@
+/* Sangría para el contenido debajo del título en todas las secciones excepto 'Mis Proyectos' y solo en desktop */
+@media (min-width: 768px) {
+  .resume-section:not(#projects) .resume-section-content > *:not(.section-title) {
+    margin-left: 1.5rem;
+  }
+}
 
+/* Fecha experiencia desktop */
 .fecha-experiencia.d-none.d-md-inline {
   position: absolute;
   right: 0;
   top: 0.15rem;
-  /* Sin transform para que quede alineada con el título */
   color: #888;
   font-size: 1rem;
   font-weight: 500;
@@ -11,14 +17,15 @@
   white-space: nowrap;
 }
 body.dark-mode .fecha-experiencia.d-none.d-md-inline {
-  color: #fff !important;
-}
+  color: #27A776 !important;
+  }
+
 /* Fecha de educación alineada a la derecha y color blanco en modo oscuro */
+/* Fecha educación desktop */
 .fecha-educacion.d-none.d-md-inline {
   position: absolute;
   right: 0;
   top: 0.15rem;
-  /* Sin transform para que quede alineada con el título */
   color: #888;
   font-size: 1rem;
   font-weight: 500;
@@ -26,8 +33,15 @@ body.dark-mode .fecha-experiencia.d-none.d-md-inline {
   white-space: nowrap;
 }
 body.dark-mode .fecha-educacion.d-none.d-md-inline {
-  color: #fff !important;
+  color: #27A776 !important;
 }
+body.dark-mode .fecha-experiencia.d-inline.d-md-none {
+  color: #27A776 !important;
+}
+body.dark-mode .fecha-educacion.d-inline.d-md-none {
+  color: #27A776 !important;
+  }
+
 /* Usar grid CSS para experiencia profesional en desktop: la fecha solo ocupa el espacio necesario */
 /* Experiencia profesional: solo quitar border-bottom en .mb-4 */
 #experience .mb-4 {
@@ -114,6 +128,11 @@ body.dark-mode .navbar-brand-mobile {
   font-weight: 500;
   letter-spacing: 0.01em;
   margin-bottom: 2rem;
+  max-width: 100%;
+  width: 100%;
+  /* Para que las listas de Experiencia, Formación y Otros Datos aprovechen el ancho completo */
+  box-sizing: border-box;
+  padding-right: 0;
 }
 body.dark-mode .list-custom {
   color: #e6eef0 !important;
@@ -346,7 +365,7 @@ body.dark-mode #langToggle:hover, body.dark-mode #langToggle:focus {
   box-sizing: border-box;
 }
 .resume-section .resume-section-content {
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
   margin-left: 0;
   text-align: left;
@@ -357,6 +376,12 @@ body.dark-mode #langToggle:hover, body.dark-mode #langToggle:focus {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
+/* Mantener el ancho original en la sección de proyectos */
+#projects .resume-section-content.section-padding {
+  max-width: 700px;
+  }
+
 @media (min-width: 768px) {
   .section-padding {
     padding-left: 2.5rem;
