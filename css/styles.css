@@ -1,9 +1,17 @@
+/* ====================================================== */
+/*                    SECCIÓN DE ESTILO GENERAL          */
+/* ====================================================== */
+
 /* Sangría para el contenido debajo del título en todas las secciones excepto 'Mis Proyectos' y solo en desktop */
 @media (min-width: 768px) {
   .resume-section:not(#projects) .resume-section-content > *:not(.section-title) {
     margin-left: 1.5rem;
   }
 }
+
+/* ====================================================== */
+/*                     FECHAS                             */
+/* ====================================================== */
 
 /* Fecha experiencia desktop */
 .fecha-experiencia.d-none.d-md-inline {
@@ -18,9 +26,8 @@
 }
 body.dark-mode .fecha-experiencia.d-none.d-md-inline {
   color: #27A776 !important;
-  }
+}
 
-/* Fecha de educación alineada a la derecha y color blanco en modo oscuro */
 /* Fecha educación desktop */
 .fecha-educacion.d-none.d-md-inline {
   position: absolute;
@@ -35,26 +42,36 @@ body.dark-mode .fecha-experiencia.d-none.d-md-inline {
 body.dark-mode .fecha-educacion.d-none.d-md-inline {
   color: #27A776 !important;
 }
+
+/* Fechas en móvil en modo oscuro */
 body.dark-mode .fecha-experiencia.d-inline.d-md-none {
   color: #27A776 !important;
 }
 body.dark-mode .fecha-educacion.d-inline.d-md-none {
   color: #27A776 !important;
-  }
+}
 
-/* Usar grid CSS para experiencia profesional en desktop: la fecha solo ocupa el espacio necesario */
-/* Experiencia profesional: solo quitar border-bottom en .mb-4 */
+/* ====================================================== */
+/*                     EXPERIENCIA                       */
+/* ====================================================== */
+
+/* Quitar border-bottom en experiencia profesional */
 #experience .mb-4 {
   border-bottom: none !important;
 }
-/* Forzar una sola línea en el lead principal de About */
+
+/* ====================================================== */
+/*                     ABOUT                               */
+/* ====================================================== */
+
+/* Forzar una sola línea en el lead principal */
 .about-singleline {
   white-space: nowrap;
   display: block;
   font-size: 1rem;
 }
-/* Contacto About */
 
+/* Contacto About */
 .about-contact {
   font-size: 1.2rem;
   color: #444;
@@ -72,7 +89,12 @@ body.dark-mode .fecha-educacion.d-inline.d-md-none {
   overflow: visible;
   text-overflow: unset;
 }
-/* Centrado real del nombre y botón hamburguesa en navbar móvil */
+
+/* ====================================================== */
+/*                     NAVBAR MÓVIL                        */
+/* ====================================================== */
+
+/* Centrado del nombre y botón hamburguesa */
 .navbar-mobile-header {
   width: 100%;
   display: flex;
@@ -92,6 +114,7 @@ body.dark-mode .fecha-educacion.d-inline.d-md-none {
   right: auto;
   transform: none;
 }
+
 /* Nombre en navbar móvil */
 .navbar-brand-mobile {
   font-family: 'Saira Extra Condensed', 'Arial Black', Impact, sans-serif;
@@ -120,7 +143,12 @@ body.dark-mode .navbar-brand-mobile {
   background: linear-gradient(90deg, rgba(39,167,118,0.85) 60%, rgba(39,167,118,0.55) 100%);
   text-shadow: 0 2px 16px rgba(39,167,118,0.28);
 }
-/* Listas y textos secundarios uniformes */
+
+/* ====================================================== */
+/*                     LISTAS Y TEXTOS                    */
+/* ====================================================== */
+
+/* Listas personalizadas */
 .list-custom {
   color: #333 !important;
   font-size: 1.1rem;
@@ -130,7 +158,6 @@ body.dark-mode .navbar-brand-mobile {
   margin-bottom: 2rem;
   max-width: 100%;
   width: 100%;
-  /* Para que las listas de Experiencia, Formación y Otros Datos aprovechen el ancho completo */
   box-sizing: border-box;
   padding-right: 0;
 }
@@ -138,8 +165,7 @@ body.dark-mode .list-custom {
   color: #e6eef0 !important;
 }
 
-
-/* Subtítulo uniforme para Experiencia y Proyectos */
+/* Subtítulos uniformes */
 .resume-section-content .subheading,
 .subheading {
   font-family: 'Muli', Arial, sans-serif;
@@ -153,6 +179,7 @@ body.dark-mode .subheading {
   color: #7be2b2 !important;
 }
 
+/* Texto principal */
 .resume-section-content p.lead {
   font-family: 'Muli', Arial, sans-serif;
   font-size: 1.1rem;
@@ -163,6 +190,7 @@ body.dark-mode .resume-section-content p.lead {
   color: #e6eef0 !important;
 }
 
+/* H3 dentro de secciones */
 .resume-section-content h3 {
   font-family: 'Muli', Arial, sans-serif;
   font-size: 1.25rem;
@@ -174,8 +202,7 @@ body.dark-mode .resume-section-content h3 {
   color: #e6eef0 !important;
 }
 
-/* La fecha de experiencia profesional ahora está dentro del h3, no requiere reglas especiales de ancho */
-/* Texto secundario personalizado para contraste en ambos temas */
+/* Texto secundario personalizado */
 .text-secondary-custom {
   color: #444 !important;
   font-weight: 500;
@@ -183,7 +210,8 @@ body.dark-mode .resume-section-content h3 {
 body.dark-mode .text-secondary-custom {
   color: #b0bfc7 !important;
 }
-/* Mejorar contraste de textos importantes en modo oscuro */
+
+/* Mejor contraste de textos importantes */
 .text-main-dark {
   color: #212529 !important;
   transition: color .2s;
@@ -191,6 +219,10 @@ body.dark-mode .text-secondary-custom {
 body.dark-mode .text-main-dark {
   color: #e6eef0 !important;
 }
+
+/* ====================================================== */
+/*                     VARIABLES CSS                      */
+/* ====================================================== */
 :root {
   --bs-primary: #27A776;
   --sidebar-width: 16rem;
@@ -203,6 +235,10 @@ body {
   color: var(--bs-body-color);
   transition: background-color .2s ease, color .2s ease;
 }
+
+/* ====================================================== */
+/*                     SIDEBAR NAV                         */
+/* ====================================================== */
 
 #sideNav {
   position: fixed;
@@ -249,16 +285,17 @@ body {
   width: 100%;
 }
 
+/* ====================================================== */
+/*                     NAVBAR DESKTOP Y MÓVIL             */
+/* ====================================================== */
 
-
-/* NAVBAR DESKTOP */
+/* Navbar Desktop */
 #navbarDesktop .nav-link {
   color: #fff;
   padding: .4rem .5rem;
   border-radius: .25rem;
   transition: background 0.15s, color 0.15s;
 }
-
 #navbarDesktop .nav-link:hover {
   color: #fff;
   background: rgba(0,0,0,0.18);
@@ -277,14 +314,13 @@ body.dark-mode #navbarDesktop .nav-link.active {
   box-shadow: 0 2px 12px rgba(0,0,0,0.28);
 }
 
-/* NAVBAR MOVIL */
+/* Navbar Móvil */
 #navbarMobile .nav-link {
   color: #fff;
   padding: .4rem .5rem;
   border-radius: .25rem;
   transition: background 0.15s, color 0.15s;
 }
-
 #navbarMobile .nav-link:hover {
   color: #fff;
   background: rgba(0,0,0,0.18);
@@ -303,10 +339,14 @@ body.dark-mode #navbarMobile .nav-link.active {
   box-shadow: 0 2px 12px rgba(0,0,0,0.28);
 }
 
+/* ====================================================== */
+/*                     NAV FOOTER Y TOGGLES               */
+/* ====================================================== */
+
 .nav-footer { margin-top: auto; width: 100%; }
 #darkModeToggle { border-width: 1px; }
 
-/* Botón de idioma (igual estilo que dark mode toggle) */
+/* Botón de idioma */
 #langToggle {
   border-width: 1px;
   background: transparent;
@@ -331,29 +371,70 @@ body.dark-mode #langToggle:hover, body.dark-mode #langToggle:focus {
   border-color: #7be2b2;
 }
 
+/* ====================================================== */
+/*                     RESPONSIVE                           */
+/* ====================================================== */
+
 @media (min-width: 992px) {
   body { padding-left: var(--sidebar-width); }
-  #sideNav {
-    justify-content: flex-start;
-  }
-  .nav-main {
-    height: 100%;
-    justify-content: center !important;
-    gap: 0;
-  }
-  .navbar-brand {
-    margin-bottom: 1.2rem !important;
-  }
-  #sideNav .navbar-nav {
-    align-items: center;
-    width: 100%;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-    #sideNav .collapse.navbar-collapse.d-lg-none {
-      display: none !important;
-    }
+  #sideNav { justify-content: flex-start; }
+  .nav-main { height: 100%; justify-content: center !important; gap: 0; }
+  .navbar-brand { margin-bottom: 1.2rem !important; }
+  #sideNav .navbar-nav { align-items: center; width: 100%; margin-bottom: 0; margin-top: 0; }
+  #sideNav .collapse.navbar-collapse.d-lg-none { display: none !important; }
 }
+
+@media (max-width: 991.98px) {
+  #sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    z-index: 1000;
+  }
+  .img-profile { width: 6rem; height: 6rem; margin-bottom: .25rem; }
+  body { padding-left: 0; }
+  .nav-main { display: none !important; }
+  .nav-footer { margin-top: 0; }
+  .navbar-toggler { margin-left: auto; margin-right: 0; border: none; box-shadow: none; }
+  .navbar-brand { font-size: 1.25rem; padding: 0; margin: 0; letter-spacing: 1px; font-weight: 700; }
+  .navbar-brand.navbar-brand-mobile {
+    font-size: 2.7rem !important;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    padding: 0.15rem 1.2rem 0.15rem 1.1rem;
+    border-radius: .45rem;
+    background: linear-gradient(90deg, rgba(39,167,118,0.92) 60%, rgba(39,167,118,0.75) 100%);
+    box-shadow: 0 2px 8px rgba(39,167,118,0.10);
+    color: #fff !important;
+    text-shadow: 0 2px 12px rgba(39,167,118,0.18);
+    line-height: 1.1;
+    display: block;
+    text-align: left;
+    max-width: 90vw;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body.dark-mode .navbar-brand.navbar-brand-mobile {
+    color: #e6eef0 !important;
+    background: linear-gradient(90deg, rgba(39,167,118,0.85) 60%, rgba(39,167,118,0.55) 100%);
+    text-shadow: 0 2px 16px rgba(39,167,118,0.28);
+  }
+  #sideNav .navbar-collapse { background: #27A776; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+  #sideNav .navbar-nav { align-items: flex-start; padding: 0.5rem 1rem; }
+  #sideNav .nav-link { font-size: 1.1rem; padding: .5rem 0; }
+  .container-fluid { padding-top: 3.5rem !important; }
+}
+
+/* ====================================================== */
+/*                     SECCIONES PRINCIPALES             */
+/* ====================================================== */
 
 .resume-section {
   padding-top: 2rem;
@@ -372,28 +453,21 @@ body.dark-mode #langToggle:hover, body.dark-mode #langToggle:focus {
 }
 
 /* Padding solo para secciones que NO son proyectos */
-.section-padding {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
+.section-padding { padding-left: 1.5rem; padding-right: 1.5rem; }
 
 /* Mantener el ancho original en la sección de proyectos */
-#projects .resume-section-content.section-padding {
-  max-width: 700px;
-  }
+#projects .resume-section-content.section-padding { max-width: 700px; }
 
 @media (min-width: 768px) {
-  .section-padding {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
+  .section-padding { padding-left: 2.5rem; padding-right: 2.5rem; }
 }
 @media (max-width: 600px) {
-  .section-padding {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-  }
+  .section-padding { padding-left: 1.1rem; padding-right: 1.1rem; }
 }
+
+/* ====================================================== */
+/*                     TITULOS DE SECCIONES              */
+/* ====================================================== */
 
 .section-title {
   font-size: 3.2rem;
@@ -409,7 +483,6 @@ body.dark-mode #langToggle:hover, body.dark-mode #langToggle:focus {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 @media (max-width: 600px) {
   .section-title {
     font-size: 2.1rem;
@@ -417,6 +490,11 @@ body.dark-mode #langToggle:hover, body.dark-mode #langToggle:focus {
     letter-spacing: 1px;
   }
 }
+
+/* ====================================================== */
+/*                     ICONOS SOCIALES                   */
+/* ====================================================== */
+
 .social-icons {
   display: flex;
   align-items: center;
@@ -434,7 +512,10 @@ body.dark-mode #langToggle:hover, body.dark-mode #langToggle:focus {
   transform: scale(1.14);
 }
 
-/* Botón Descargar CV alineado y con contraste en ambos temas */
+/* ====================================================== */
+/*                     BOTÓN DESCARGAR CV                */
+/* ====================================================== */
+
 .btn-cv {
   border: 1.5px solid #27A776;
   color: #27A776;
@@ -462,119 +543,47 @@ body.dark-mode .btn-cv:hover, body.dark-mode .btn-cv:focus {
   border-color: #7be2b2;
 }
 
+/* ====================================================== */
+/*                     MODO OSCURO                        */
+/* ====================================================== */
+
 body.dark-mode {
   --bs-body-bg: #0f1720;
   --bs-body-color: #e6eef0;
 }
 body.dark-mode #sideNav { filter: brightness(.95); }
 body.dark-mode #sideNav .navbar-brand,
-body.dark-mode #sideNav .fs-5.text-white {
-  color: #e6eef0 !important;
-}
-body.dark-mode #sideNav .nav-link {
-  color: #e6eef0 !important;
-}
+body.dark-mode #sideNav .fs-5.text-white { color: #e6eef0 !important; }
+body.dark-mode #sideNav .nav-link { color: #e6eef0 !important; }
 body.dark-mode .resume-section,
 body.dark-mode .resume-section-content,
 body.dark-mode .resume-section p,
 body.dark-mode .resume-section ul,
 body.dark-mode .resume-section li,
-body.dark-mode .resume-section .subheading {
-  color: #e6eef0 !important;
-}
-body.dark-mode .section-title {
-  color: #27A776 !important;
-  text-shadow: 0 2px 16px rgba(39,167,118,0.18);
-}
-body.dark-mode .subheading {
-  color: #7be2b2 !important;
-}
+body.dark-mode .resume-section .subheading { color: #e6eef0 !important; }
+body.dark-mode .section-title { color: #27A776 !important; text-shadow: 0 2px 16px rgba(39,167,118,0.18); }
+body.dark-mode .subheading { color: #7be2b2 !important; }
 body.dark-mode a,
-body.dark-mode .social-icons a {
-  color: #7be2b2 !important;
-}
-body.dark-mode .social-icons a:hover {
-  color: #27A776 !important;
-}
+body.dark-mode .social-icons a { color: #7be2b2 !important; }
+body.dark-mode .social-icons a:hover { color: #27A776 !important; }
 body.dark-mode .fa-li i,
-body.dark-mode .dev-icons i {
-  color: #27A776 !important;
-}
-body.dark-mode .resume-section .flex-shrink-0 {
-  color: #b0bfc7 !important;
-}
+body.dark-mode .dev-icons i { color: #27A776 !important; }
+body.dark-mode .resume-section .flex-shrink-0 { color: #b0bfc7 !important; }
+body.dark-mode .btn-success { color: #fff !important; }
 
-@media (max-width: 991.98px) {
-  #sideNav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    padding: 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    z-index: 1000;
-  }
-  .img-profile { width: 6rem; height: 6rem; margin-bottom: .25rem; }
-  body { padding-left: 0; }
-  .nav-main { display: none !important; }
-  .nav-footer { margin-top: 0; }
-  .navbar-toggler {
-    margin-left: auto;
-    margin-right: 0;
-    border: none;
-    box-shadow: none;
-  }
-  .navbar-brand {
-    font-size: 1.25rem;
-    padding: 0;
-    margin: 0;
-    letter-spacing: 1px;
-    font-weight: 700;
-  }
-  .navbar-brand.navbar-brand-mobile {
-    font-size: 2.7rem !important;
-    font-weight: 900;
-    letter-spacing: 1.5px;
-    padding: 0.15rem 1.2rem 0.15rem 1.1rem;
-    border-radius: .45rem;
-    background: linear-gradient(90deg, rgba(39,167,118,0.92) 60%, rgba(39,167,118,0.75) 100%);
-    box-shadow: 0 2px 8px rgba(39,167,118,0.10);
-    color: #fff !important;
-    text-shadow: 0 2px 12px rgba(39,167,118,0.18);
-    line-height: 1.1;
-    display: block;
-    text-align: left;
-    max-width: 90vw;
-    min-width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  body.dark-mode .navbar-brand.navbar-brand-mobile {
-    color: #e6eef0 !important;
-    background: linear-gradient(90deg, rgba(39,167,118,0.85) 60%, rgba(39,167,118,0.55) 100%);
-    text-shadow: 0 2px 16px rgba(39,167,118,0.28);
-  }
-  #sideNav .navbar-collapse {
-    background: #27A776;
-    width: 100%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  }
-  #sideNav .navbar-nav {
-    align-items: flex-start;
-    padding: 0.5rem 1rem;
-  }
-  #sideNav .nav-link {
-    font-size: 1.1rem;
-    padding: .5rem 0;
-  }
-  .container-fluid {
-    padding-top: 3.5rem !important;
-  }
-}
+/* ====================================================== */
+/*                     PROYECTOS                           */
+/* ====================================================== */
 
-body.dark-mode .btn-success {
-  color: #fff !important;
+.project-carousel-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.project-carousel-card .carousel-inner {
+  height: 220px; /* Ajusta según el tamaño deseado */
+}
+.project-carousel-card .carousel-inner img.project-carousel-img {
+  height: 100%;
+  object-fit: cover;
 }
