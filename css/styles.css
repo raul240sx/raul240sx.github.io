@@ -578,12 +578,14 @@ body.dark-mode .btn-success { color: #fff !important; }
 .project-carousel-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
-.project-carousel-card .carousel-inner {
-  height: 220px; /* Ajusta según el tamaño deseado */
+.project-carousel-card .carousel-item {
+  height: 220px;
 }
-.project-carousel-card .carousel-inner img.project-carousel-img {
+
+.project-carousel-card .carousel-item img.project-carousel-img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: .25rem;
 }
