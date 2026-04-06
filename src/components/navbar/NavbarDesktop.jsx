@@ -7,6 +7,7 @@ function NavbarDesktop() {
   const { theme, toggleTheme } = useTheme();
   const navItems = [
     { name: 'Acerca de mí', path: '/' },
+    { name: 'Perfil Profesional', path: '/expertise' },
     { name: 'Proyectos', path: '/projects' },
     { name: 'Formación', path: '/education' },
     { name: 'Experiencias', path: '/experiences' }

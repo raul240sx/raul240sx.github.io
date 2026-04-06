@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { DjangoIcon, DjangoRestIcon, PythonIcon, DockerIcon, PostgreIcon, ReactIcon, BootstrapIcon, VpsIcon, NginxIcon, GitHubIcon, LinkedInIcon, PhoneIcon, EmailIcon } from '../components/common/icons.jsx'
+import { Link } from 'react-router-dom'
+import { GitHubIcon, LinkedInIcon, PhoneIcon, EmailIcon, BookmarkIcon } from '../components/common/icons.jsx'
+import CopyButton from '../components/common/CopyButton.jsx';
 import './HomePage.css'
 
 function HomePage() {
@@ -35,32 +37,43 @@ function HomePage() {
 
 			</div>
 			<div className='secondary-info-section'>
-				<h2>Stack principal</h2>
-				<p>Backend</p>
-				<ul>
-					<li><PythonIcon/>Python</li>
-					<li><DjangoIcon/>Django</li>
-					<li><DjangoRestIcon/>Django Rest Framework (DRF)</li>
-				</ul>
-
-				<p>Infraestructura</p>
-				<ul>
-					<li><DockerIcon/>Docker</li>
-					<li><NginxIcon/>Nginx</li>
-					<li><VpsIcon/>VPS</li>
-				</ul>
-
-				<p>Bases de datos</p>
-				<ul>
-					<li><PostgreIcon/>PostgreSQL</li>
-				</ul>
-
-				<p>Frontend</p>
-				<ul>
-					<li><ReactIcon/>React</li>
-					<li><BootstrapIcon/>Bootstrap</li>
-				</ul>
-				
+				<h2>Contáctame</h2>
+				<div className='contact-section'>
+					<ul className='contact-list'>
+						<li className='contact-item'>
+							<a href='mailto:raul.ramirez1401@gmail.com'>
+								<EmailIcon />
+								raul.ramirez1401@gmail.com
+							</a>
+							<CopyButton text='raul.ramirez1401@gmail.com'/>
+						</li>
+						<li className='contact-item'>
+							<a href='tel:+56942857688'>
+								<PhoneIcon />
+								+569 4285 7688
+							</a>
+							<CopyButton text='569 4285 7688'/>
+						</li>
+						<li className='contact-item'>
+							<a href='https://www.linkedin.com/in/ra%C3%BAl-ram%C3%ADrez-sanhueza/' target='_blank' rel='noopener noreferrer'>
+								<LinkedInIcon />
+								LinkedIn
+							</a>
+						</li>
+						<li className='contact-item'>
+							<a href='https://github.com/raul240sx' target='_blank' rel='noopener noreferrer'>
+								<GitHubIcon />
+								Mi repositorio
+							</a>
+						</li>
+						<li className='contact-item'>
+							<a href='src/assets/CV_Raul_Ramirez_Sanhueza.pdf' download>
+								<BookmarkIcon />
+								Descargar CV
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	)
