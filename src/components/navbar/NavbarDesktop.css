@@ -1,0 +1,74 @@
+.navbar-desktop-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--primary);
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.navbar-desktop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+.profile-picture {
+    margin-top: 2rem;
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.profile-picture img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: auto;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    filter: blur(0px);
+}
+
+.navbar-desktop-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: large;
+    font-weight: 600;
+}
+
+.navbar-desktop-items a {
+    color: var(--dark-text);
+    text-decoration: none;
+}
+
+#my-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;   
+}
+
+.other-functions {
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.other-functions button {
+    background-color: transparent;
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    padding: 1rem 2rem;
+    font-size: medium;
+    font-family: var(--font-body);
+    color: var(--dark-text);
+}

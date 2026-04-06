@@ -1,0 +1,46 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,600,800,800i');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  /* Colors */
+  --primary: #27A776;
+  --primary-dark: #14593f;
+  --primary-light: #7be2b2;
+  --dark-text: #212529;
+  --gray-text: #444;
+  --light-gray: #888;
+  --white: #ffffff;
+  
+  /* Backgrounds */
+  --bg-body: #ffffff;
+  --bg-sidebar: var(--primary);
+  
+  /* Fonts */
+  --font-titles: 'Saira Extra Condensed', 'Arial Black', sans-serif;
+  --font-body: 'Muli', Arial, sans-serif;
+  
+  /* Sizes */
+  --sidebar-width: 16rem;
+}
+
+/* Selector automático de Dark Mode */
+[data-theme='dark'] {
+  --bg-body: #0f1720;
+  --dark-text: #e6eef0;
+  --gray-text: #b0bfc7;
+  --light-gray: var(--primary); /* En tu CSS original usabas el verde para fechas en dark */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-body);
+  color: var(--dark-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

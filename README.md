@@ -1,24 +1,16 @@
-# Sobre mí
+# React + Vite
 
-## Mi formación y experiencia profesional  
-Soy **Raúl Ignacio Ramírez Sanhueza**, ingeniero electrónico de profesión y actualmente desarrollador web. Mi formación incluye:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- **Ingeniería de Ejecución en Electrónica** en la **Universidad del Biobío**.
-- **Bootcamp de Desarrollo Web Full Stack con Python** en **Desafío Latam**.
+Currently, two official plugins are available:
 
-En mi trayectoria profesional, primero fui **líder de electrocontrol** en **Quant Service**, una empresa contratista dentro de la siderúrgica Huachipato. Allí lideré equipos de trabajo, asumí responsabilidades de supervisión en ausencia del supervisor, y aproveché la oportunidad para aprender y mejorar en la gestión de equipos.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Luego, di un paso adelante al convertirme en **inspector técnico de obras eléctricas** esta vez directamente en la siderúrgica Huachipato, donde me enfoqué en coordinar, planificar y supervisar los trabajos de los equipos de las empresas contratistas del área eléctrica y gestion de repuestos.
+## React Compiler
 
-## Búsqueda profesional  
-Soy un desarrollador full stack, pero actualmente me estoy inclinando más hacia el backend. Mi objetivo es encontrar una oportunidad como desarrollador junior, donde pueda seguir aprendiendo y creciendo en este campo.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Mis intereses  
-- **Música y audio:** Me encanta la música, especialmente la guitarra eléctrica y la grabación de audio.
-- **Videojuegos:** Soy un apasionado de los videojuegos y disfruto jugar en mi tiempo libre.
-- **Tecnología y PC:** Me fascina armar computadoras, buscar piezas y reciclar hardware. También estoy montando mi propio servidor casero para alojar mis proyectos.
+## Expanding the ESLint configuration
 
-## Cómo contactarme  
-- 📧 **Email:** raul.ramirez1401@gmail.com  
-- 📱 **Teléfono:** +56 9 4285 7688  
-- 🌐 **LinkedIn:** https://www.linkedin.com/in/ra%C3%BAl-ram%C3%ADrez-sanhueza-77a2bb16a/
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Portfolio - Raúl Ramírez</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Sidebar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <!-- NAVBAR DESKTOP -->
+      <div class="nav-main w-100 d-none d-lg-flex flex-column align-items-center justify-content-center" style="height:100%;">
+        <a class="navbar-brand d-flex flex-column align-items-center mb-3" href="#page-top">
+          <img class="img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="profile" />
+          <div class="fs-5 text-white">Raúl Ramírez</div>
+        </a>
+        <ul class="navbar-nav flex-column w-100 align-items-center" id="navbarDesktop">
+          <li class="nav-item"><a class="nav-link" href="#about">Acerca de mi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experiencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#other">Otros Datos</a></li>
+        </ul>
+      </div>
+      <!-- NAVBAR MOVIL -->
+      <div class="d-flex d-lg-none w-100 flex-column">
+  <div class="navbar-mobile-header w-100 d-flex align-items-center">
+          <a class="navbar-brand navbar-brand-mobile" href="#page-top">Raúl Ramírez</a>
+          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse w-100" id="navbarResponsive">
+          <ul class="navbar-nav flex-column w-100" id="navbarMobile">
+            <li class="nav-item"><a class="nav-link" href="#about">Acerca de mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Formación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experiencias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#other">Otros Datos</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Botones de fondo del navbar -->
+      <div class="nav-footer mt-auto w-100 p-3">
+        <!-- Botón de cambio de idioma (futuro, dejar visible, comentar para ocultar) 
+        <button id="langToggle" class="btn btn-outline-secondary w-100 mb-2" type="button">
+          <span class="me-2"><img src="assets/img/es.svg" alt="ES" width="20" class="me-1"></span>
+          ES/EN
+          <span class="me-2" style="padding-left: 7%;"><img src="assets/img/us.svg" alt="EN" width="20"></span>
+        </button>
+        -->
+        <button id="darkModeToggle" class="btn btn-outline-light w-100" type="button">🌙 Dark Mode</button>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-fluid p-0">
+      <!-- About -->
+      <section class="resume-section" id="about">
+        <div class="resume-section-content section-padding">
+          <h1 class="section-title mb-0" style="color:#27A776; font-weight:800; letter-spacing:1px;">Raúl <span class="text-main-dark" style="color:#212529; font-weight:700;">Ignacio</span> <span class="text-main" style="color:#27A776; font-weight:700;">Ramírez</span> <span class="text-main-dark" style="color:#212529; font-weight:700;">Sanhueza</span></h1>
+          <div class="subheading mb-4 about-contact">
+            <span class="about-role text-main-dark">Desarrollador Web Full Stack Python</span>
+            <span class="about-email" style="color:#27A776;">raul.ramirez1401@gmail.com</span>
+            <span class="about-phone text-main-dark" style="color:#444;">+569 4285 7688</span>
+          </div>
+          <!-- Versión Desktop -->
+          <p class="lead mb-0 about-singleline d-none d-md-block" style="font-size:1.1rem; color:#333;">
+            <strong>Desarrollador web enfocado en backend con Python, Django y PostgreSQL<br>y frontend con Bootstrap</strong>
+          </p>
+
+          <!-- Versión Mobile -->
+          <p class="lead mb-0 d-block d-md-none" style="font-size:1.1rem; color:#333;">
+            <strong>
+              Desarrollador web enfocado en backend<br>
+              con Python, Django y PostgreSQL<br>
+              y frontend con Bootstrap
+            </strong>
+          </p>
+
+          <p class="lead mb-4" style="font-size:1.1rem; color:#333;">
+            Desarrollador backend enfocado en Python y Django, con experiencia en el diseño de APIs REST,
+            arquitectura basada en microservicios y despliegue de aplicaciones web en entornos reales.
+          </p>
+          <p class="lead mb-4" style="font-size:1.1rem; color:#333;">  He desarrollado proyectos como un e-commerce funcional donde implementé autenticación con JWT,
+            integración de pagos y manejo de concurrencia mediante tareas asíncronas. Además, he trabajado
+            con frontend desacoplado en React consumiendo mis propias APIs.
+          </p>
+          <p class="lead mb-4" style="font-size:1.1rem; color:#333;">
+            Vengo del área de la ingeniería electrónica, lo que me aporta una base sólida en resolución de
+            problemas, pensamiento lógico y trabajo en entornos técnicos exigentes. Actualmente busco
+            consolidarme como desarrollador backend, participando en proyectos donde pueda aportar soluciones
+            robustas y seguir profundizando en buenas prácticas de desarrollo.
+          </p>
+          <div class="social-icons mb-4">
+            <a class="social-icon" href="https://www.linkedin.com/in/ra%C3%BAl-ram%C3%ADrez-sanhueza-77a2bb16a/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://github.com/raul240sx" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="assets/cv_raul_ramirez.pdf" download="cv_raul_ramirez.pdf" class="btn btn-cv ms-2" style="min-width:120px;">Descargar CV</a>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+
+
+      <!-- Projects -->
+      <section class="resume-section" id="projects">
+        <div class="container-fluid px-0">
+          <div class="resume-section-content section-padding">
+            <h2 class="section-title mb-4">Mis <span class="text-main-dark" style="color:#212529; font-weight:700;">Proyectos</span></h2>
+          </div>
+          <div class="row g-4 align-items-stretch justify-content-center mx-0">
+
+            <!-- Proyecto 1 -->
+            <div class="col-12 col-md-7 d-flex flex-column px-4 px-md-5">
+              <h3 class="mb-1" style="font-weight:600;">Frontend para Guitarzone.cl</h3>
+              <div class="subheading mb-2" style="color:#27A776;">Proyecto Personal - Freelance</div>
+              <ul class="list-custom">
+                <li>Frontend desarrollado con <strong>JavaScript</strong>, <strong>React</strong>, <strong>Vite</strong>, <strong>Nginx</strong> y <strong>Docker Compose</strong>.</li>
+                <li>Diseñada para consumir mi api de <strong>api.guitarzone.cl</strong> creada con Djando Rest Framework.</li>
+                <li>Cuenta con dominio propio.</li>
+                <li>Uso de axios para las llamadas a la API.</li>
+                <li>Servido a traves de mi servidor casero por medio de un <strong>Tunel Cloudflare</strong> de forma independiente al backend.</li>
+                <li>Implemanta formularios, modales, cards, carruseles, navbar, footer respetando el <strong>HTML semántinco</strong>.</li>
+              </ul>
+              <div class="d-flex align-items-center gap-2">
+                <span>🔗</span>
+                <a href="https://github.com/raul240sx/ecommerce_frontend" class="text-decoration-none">
+                  Ver repositorio en GitHub
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 d-flex align-items-center justify-content-center px-4 px-md-2">
+              <div class="card project-carousel-card w-100" style="max-width:370px; min-width:220px;">
+                <div id="carouselProyecto3" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/proyecto3-1.png" class="d-block w-100 project-carousel-img" alt="Screenshot 1" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto3-2.png" class="d-block w-100 project-carousel-img" alt="Screenshot 2" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto3-3.png" class="d-block w-100 project-carousel-img" alt="Screenshot 3" />
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center">
+                  <a href="https://guitarzone.cl/" class="btn btn-success w-100 mt-2" target="_blank">Ver demo</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- Proyecto 2 -->
+            <div class="col-12 col-md-7 d-flex flex-column px-4 px-md-5">
+              <h3 class="mb-1" style="font-weight:600;">API y Backend para Guitarzone.cl</h3>
+              <div class="subheading mb-2" style="color:#27A776;">Proyecto personal - Freelance</div>
+              <ul class="list-custom">
+                <li>API y backend desarrollado con <strong>Django</strong>, <strong>Django Rest Framework</strong>, <strong>PostgreSQL</strong>, <strong>Nginx</strong> y <strong>Docker Compose</strong>.</li>
+                <li>Cuanta con dominio propio <strong>api.guitarzone.cl</strong> y servida desde servidor casero por medio de un <strong>Tunel Cloudflare</strong>.</li>
+                <li><strong>CRUD completo</strong> para la creación y administración de productos musicales, ordenes de compra y usuarios.</li>
+                <li>Implementa carrito de compra, checkout, dashboard de usuario y api de <strong>MercadoPago</strong> para el proceso de pagos.</li>
+                <li>Cuenta con sistema de reserva y liberación de con herramientas de <strong>Celery</strong> y <strong>Redis</strong> </li>
+                <li>Implementa un proxy inverso con <strong>Nginx</strong></li>
+              </ul>
+              <div class="d-flex align-items-center gap-2">
+                <span>🔗</span>
+                <a href="https://github.com/raul-1601/proyecto-inmobiliario" class="text-decoration-none">
+                  Ver repositorio en GitHub
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 d-flex align-items-center justify-content-center px-4 px-md-2">
+              <div class="card project-carousel-card w-100" style="max-width:370px; min-width:220px;">
+                <div id="carouselProyecto4" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/proyecto4-1.png" class="d-block w-100 project-carousel-img" alt="Screenshot 1" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto4-2.png" class="d-block w-100 project-carousel-img" alt="Screenshot 2" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto4-3.png" class="d-block w-100 project-carousel-img" alt="Screenshot 3" />
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center">
+                  <a href="https://proyecto-inmobiliario-ybsw.onrender.com" class="btn btn-success w-100 mt-2" target="_blank">Ver demo</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Proyecto 3 -->
+            <div class="col-12 col-md-7 d-flex flex-column px-4 px-md-5">
+              <h3 class="mb-1" style="font-weight:600;">Portal de arriendo de inmuebles</h3>
+              <div class="subheading mb-2" style="color:#27A776;">Proyecto final - Bootcamp Fullstack Python</div>
+              <ul class="list-custom">
+                <li>Aplicación web desarrollada con <strong>Django</strong>, <strong>PostgreSQL</strong>, <strong>PGAdmin</strong> y <strong>Docker Compose</strong> para la gestión de arriendos de propiedades.</li>
+                <li>Sistema de registro con dos tipos de usuarios: <strong>Arrendador</strong> y <strong>Arrendatario</strong>.</li>
+                <li><strong>CRUD completo</strong> para la creación y administración de inmuebles y solicitudes de arriendo.</li>
+                <li>Flujo de interacción entre usuarios: un arrendador publica un inmueble y puede aceptar o rechazar solicitudes y un arrendatario puede enviar solicitudes de arriendo a distintos inmuebles.</li>
+              </ul>
+              <div class="d-flex align-items-center gap-2">
+                <span>🔗</span>
+                <a href="https://github.com/raul-1601/proyecto-inmobiliario" class="text-decoration-none">
+                  Ver repositorio en GitHub
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 d-flex align-items-center justify-content-center px-4 px-md-2">
+              <div class="card project-carousel-card w-100" style="max-width:370px; min-width:220px;">
+                <div id="carouselProyecto1" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/proyecto1-1.png" class="d-block w-100 project-carousel-img" alt="Screenshot 1" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto1-2.png" class="d-block w-100 project-carousel-img" alt="Screenshot 2" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto1-3.png" class="d-block w-100 project-carousel-img" alt="Screenshot 3" />
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center">
+                  <a href="https://proyecto-inmobiliario-ybsw.onrender.com" class="btn btn-success w-100 mt-2" target="_blank">Ver demo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="col-12 col-md-7 d-flex flex-column px-4 px-md-5">
+              <h3 class="mb-1" style="font-weight:600;">E-commerce de postres</h3>
+              <div class="subheading mb-2" style="color:#27A776;">Proyecto de practica con Django - Bootcamp Fullstack Python</div>
+              <ul class="list-custom">
+                <li>Aplicación web desarrollada con <strong>Django</strong> y <strong>SQLite</strong> para un e-commerce para venta de postres normales y postres premium.</li>
+                <li>Sistema de registro de usuarios: Sólo los usuarios registrados pueden ver los productos de mayor calidad.</li>
+                <li>Implementacion de formulario de contacto: Posibilidad de solicitar información a través de un formulario de contacto que se guarda en base de datos.</li>
+                <li>Implementacion de vista de detalle para cada producto.</li>
+              </ul>
+              <div class="d-flex align-items-center gap-2">
+                <span>🔗</span>
+                <a href="https://github.com/rramirez1401/proyecto-tienda-virtual" class="text-decoration-none">
+                  Ver repositorio en GitHub
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 d-flex align-items-center justify-content-center px-4 px-md-2">
+              <div class="card project-carousel-card w-100" style="max-width:370px; min-width:220px;">
+                <div id="carouselProyecto2" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/proyecto2-1.png" class="d-block w-100 project-carousel-img" alt="Screenshot 1" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto2-2.png" class="d-block w-100 project-carousel-img" alt="Screenshot 2" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto2-3.png" class="d-block w-100 project-carousel-img" alt="Screenshot 3" />
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center">
+                  <a href="https://proyecto-tienda-virtual.onrender.com/" class="btn btn-success w-100 mt-2" target="_blank">Ver demo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 3 (plantilla)
+            <div class="col-12 col-md-7 d-flex flex-column px-4 px-md-5">
+              <h3 class="mb-1" style="font-weight:600;">Título del Proyecto 3</h3>
+              <div class="subheading mb-2" style="color:#27A776;">Subtítulo o stack</div>
+              <ul class="list-custom">
+                <li>Descripción breve del proyecto 3.</li>
+                <li>Características principales o tecnologías usadas.</li>
+                <li>Otro detalle relevante.</li>
+                <li>Resultado o impacto del proyecto.</li>
+              </ul>
+              <div class="d-flex align-items-center gap-2">
+                <span>🔗</span>
+                <a href="https://github.com/raul240sx/Proyecto_Inmobiliario" class="text-decoration-none">
+                  Ver repositorio en GitHub
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 d-flex align-items-center justify-content-center px-4 px-md-2">
+              <div class="card project-carousel-card w-100" style="max-width:370px; min-width:220px;">
+                <div id="carouselProyecto3" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/proyecto3-1.png" class="d-block w-100 project-carousel-img" alt="Screenshot 1" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto3-2.png" class="d-block w-100 project-carousel-img" alt="Screenshot 2" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/proyecto3-3.png" class="d-block w-100 project-carousel-img" alt="Screenshot 3" />
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center">
+                  <a href="#" class="btn btn-success w-100 mt-2" target="_blank">Ver demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      -->
+      </section>
+      <hr class="m-0" />
+
+      <!-- Formación -->
+      <section class="resume-section" id="education">
+        <div class="resume-section-content section-padding">
+          <h2 class="section-title mb-4">Formación <span class="text-main-dark" style="color:#212529; font-weight:700;">Académica</span></h2>
+          <!-- Formacion 1 -->
+          <div class="mb-4 position-relative">
+            <div>
+              <h3 class="mb-1" style="font-weight:600;">
+                Desarrollador Web Full Stack Python
+                <span class="fecha-experiencia d-none d-md-inline">Mar 2025 - Oct 2025</span>
+              </h3>
+              <span class="fecha-experiencia d-inline d-md-none" style="color:#888; font-size:1rem; font-weight:500; margin-left:0; margin-top:0.2rem; margin-bottom:0.2rem; display:block;">Mar 2024 - Oct 2024</span>
+              <div class="subheading mb-2" style="color:#27A776;">Desafío Latam</div>
+              <ul class="list-custom">
+                <li>Desarrollo de aplicaciones web utilizando Python, Django y PostgreSQL, gestionando bases de datos con PGAdmin y entornos con Docker Compose.</li>
+                <li>Implementación de interfaces responsivas con HTML, CSS, Bootstrap 5, Jinja2 y fundamentos de JavaScript.</li>
+                <li>Despliegue y configuración de aplicaciones en servidores VPS.</li>
+                <li>Aplicación de buenas prácticas de programación, control de versiones con Git/GitHub y enfoque en escalabilidad de proyectos.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Formacion 2 -->
+          <div class="mb-4 position-relative">
+            <div>
+              <h3 class="mb-1" style="font-weight:600;">
+                Ingeniero de Ejecución en Electrónica
+                <span class="fecha-experiencia d-none d-md-inline"> Mar 2014 - Sep 2019</span>
+              </h3>
+              <span class="fecha-experiencia d-inline d-md-none" style="color:#888; font-size:1rem; font-weight:500; margin-left:0; margin-top:0.2rem; margin-bottom:0.2rem; display:block;">Jul 2021 - Dic 2023</span>
+              <div class="subheading mb-2" style="color:#27A776;">Universidad del Bío-Bío</div>
+              <ul class="list-custom">
+                <li>Desempeña la función de alumno ayudante de la asignatura Electrónica I.</li>
+                <li>Desempeña la función de alumno ayudante de la asignatura Sistema de comunicaciones II</li>
+                              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+
+      <!-- Experiencia -->
+      <section class="resume-section" id="experience">
+        <div class="resume-section-content section-padding">
+          <h2 class="section-title mb-4">Experiencia <span class="text-main-dark" style="color:#212529; font-weight:700;">Profesional</span></h2>
+          <!-- Experiencia 1 -->
+          <div class="mb-4 position-relative">
+            <div>
+              <h3 class="mb-1" style="font-weight:600;">
+                ITO Eléctrico
+                <span class="fecha-experiencia d-none d-md-inline">Mar 2024 - Oct 2024</span>
+              </h3>
+              <span class="fecha-experiencia d-inline d-md-none" style="color:#888; font-size:1rem; font-weight:500; margin-left:0; margin-top:0.2rem; margin-bottom:0.2rem; display:block;">Mar 2024 - Oct 2024</span>
+              <div class="subheading mb-2" style="color:#27A776;">Siderúrgica Huachipato</div>
+              <ul class="list-custom">
+                <li>Supervisa la correcta ejecución de obras eléctricas en el área de Materias Primas, garantizando el cumplimiento de las normativas técnicas y de seguridad establecidas.</li>
+                <li>Realiza mejoras en los planes de mantenimiento optimizando los tiempos de ejecución, los recursos y el personal disponible.</li>
+                <li>Coordina eficientemente la logística de materiales y repuestos, optimizando los recursos y mejorando la respuesta ante emergencias operativas.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experiencia 2 -->
+          <div class="mb-4 position-relative">
+            <div>
+              <h3 class="mb-1" style="font-weight:600;">
+                Líder Electrocontrol
+                <span class="fecha-experiencia d-none d-md-inline">Jul 2021 - Dic 2023</span>
+              </h3>
+              <span class="fecha-experiencia d-inline d-md-none" style="color:#888; font-size:1rem; font-weight:500; margin-left:0; margin-top:0.2rem; margin-bottom:0.2rem; display:block;">Jul 2021 - Dic 2023</span>
+              <div class="subheading mb-2" style="color:#27A776;">Quant Service, Siderúrgica Huachipato</div>
+              <ul class="list-custom">
+                <li>Asciende de Técnico Electrocontrol a Líder Electrocontrol, demostrando habilidades de liderazgo y un sólido desempeño en el área del mantenimiento.</li>
+                <li>Es seleccionado para asumir las funciones de supervisión en ausencia del supervisor Electrocontrol, lo que evidencia su capacidad para asumir responsabilidades adicionales y contribuir de manera efectiva al equipo.</li>
+                <li>Implementa mejoras en los procedimientos de electrocontrol, optimizando el rendimiento del equipo y minimizando tiempos de inactividad.</li>
+                <li>Capacita y guía al equipo de mantenimiento en electrocontrol, fomentando un ambiente de trabajo colaborativo y promoviendo el desarrollo profesional del personal.</li>
+              </ul>
+            </div>
+          </div>
+
+      </section>
+      <hr class="m-0" />
+
+
+      <!-- Otros Datos -->
+      <section class="resume-section" id="other">
+        <div class="resume-section-content section-padding">
+          <h2 class="section-title mb-4">Otros <span class="text-main-dark" style="color:#212529; font-weight:700;">Datos</span></h2>
+          <ul class="lista mb-0 list-custom">
+            <li>Licencia de conducir clase B</li>
+            <li>Nivel de inglés B2</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

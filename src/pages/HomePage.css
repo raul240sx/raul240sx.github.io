@@ -1,0 +1,37 @@
+.about-me-container {
+    align-items: center;
+}
+
+.section-title {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.about-subtitle {
+    font-size: larger;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: larger;
+}
+
+.secondary-info-section {
+    padding-left: 3rem;
+}
+
+.secondary-info-section p {
+    font-weight: 800;
+}
+
+.secondary-info-section ul {
+    list-style: none;
+}
+
+.secondary-info-section li {
+    padding-left: 1rem;
+}
