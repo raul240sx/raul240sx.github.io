@@ -24,14 +24,20 @@
     padding-left: 3rem;
 }
 
+
 .secondary-info-section p {
     font-weight: 800;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .secondary-info-section ul {
     list-style: none;
+    display: flex;
 }
 
 .secondary-info-section li {
     padding-left: 1rem;
+    display: flex;
+    
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { DjangoIcon, DjangoRestIcon, PythonIcon, DockerIcon, PostgreIcon, ReactIcon, BootstrapIcon, VpsIcon, NginxIcon, GitHubIcon, LinkedInIcon, PhoneIcon, EmailIcon } from '../components/common/icons.jsx'
 import './HomePage.css'
 
 function HomePage() {
@@ -37,27 +38,27 @@ function HomePage() {
 				<h2>Stack principal</h2>
 				<p>Backend</p>
 				<ul>
-					<li>Python</li>
-					<li>Django</li>
-					<li>Django Rest Framework (DRF)</li>
+					<li><PythonIcon/>Python</li>
+					<li><DjangoIcon/>Django</li>
+					<li><DjangoRestIcon/>Django Rest Framework (DRF)</li>
 				</ul>
 
 				<p>Infraestructura</p>
 				<ul>
-					<li>Docker</li>
-					<li>Nginx</li>
-					<li>VPS</li>
+					<li><DockerIcon/>Docker</li>
+					<li><NginxIcon/>Nginx</li>
+					<li><VpsIcon/>VPS</li>
 				</ul>
 
 				<p>Bases de datos</p>
 				<ul>
-					<li>PostgreSQL</li>
+					<li><PostgreIcon/>PostgreSQL</li>
 				</ul>
 
 				<p>Frontend</p>
 				<ul>
-					<li>React</li>
-					<li>Bootstrap</li>
+					<li><ReactIcon/>React</li>
+					<li><BootstrapIcon/>Bootstrap</li>
 				</ul>
 				
 			</div>
