@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import ExpertisePage from './pages/ExpertisePage.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx';
+import BackgroundPage from './pages/BackgroundPage.jsx';
 import NavbarDesktop from './components/navbar/NavbarDesktop.jsx';
 import NavbarMobile from './components/navbar/NavbarMobile.jsx';
 import { ThemeProvider } from './context/ThemeContext.jsx';
@@ -20,16 +21,18 @@ function App() {
             <HomePage />
           </section>
           
-          <section id="expertise">
+          <section id='expertise'>
             <ExpertisePage />
           </section>
 
-          <section id="projects">
+          <section id='projects'>
             <ProjectsPage />
           </section>
 
-          {/* Agrega aquí el resto cuando los tengas listos */}
-          {/* <section id="projects"><ProjectsPage /></section> */}
+          <section id='background'>
+            <BackgroundPage />
+          </section>
+
         </main>
       </Router>
     </ThemeProvider>

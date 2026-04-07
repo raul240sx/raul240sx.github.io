@@ -1,4 +1,3 @@
-import React from 'react';
 import './ExpertisePage.css'; // Archivo para estilos específicos de esta página
 
 const ExpertisePage = () => {
@@ -24,18 +23,23 @@ const ExpertisePage = () => {
         <div className='info-section'>
           <div className='value-cards-container'>
             <div className='value-card'>
-                <h3>Enfoque en Sistemas</h3>
-                <p>Diseño arquitecturas backend robustas pensando en el flujo completo de datos.</p>
-            </div>
-            
-            <div className='value-card'>
-                <h3>Liderazgo Comprobado</h3>
-                <p>Gestión de equipos técnicos y optimización de procesos en entornos de alta exigencia.</p>
+              <h3>Diseño de APIs</h3>
+              <p>Construyo APIs REST estructuradas, pensando en escalabilidad, separación de responsabilidades y consumo desde frontend desacoplado.</p>
             </div>
 
             <div className='value-card'>
-                <h3>Despliegue & Operación</h3>
-                <p>Experiencia real en entornos productivos con Docker, Nginx y microservicios.</p>
+              <h3>Arquitectura Backend</h3>
+              <p>Trabajo con arquitecturas basadas en servicios, organizando lógica de negocio, persistencia y comunicación entre componentes.</p>
+            </div>
+
+            <div className='value-card'>
+              <h3>Concurrencia y Procesos</h3>
+              <p>Implemento tareas asíncronas con Celery y Redis para manejar procesos críticos como reservas de stock y evitar conflictos.</p>
+            </div>
+
+            <div className='value-card'>
+              <h3>Despliegue y Operación</h3>
+              <p>Despliego aplicaciones con Docker, Nginx y VPS, exponiéndolas públicamente y gestionando su funcionamiento en entornos reales.</p>
             </div>
         </div>
         </div>

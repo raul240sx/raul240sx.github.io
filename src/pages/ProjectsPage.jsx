@@ -9,13 +9,13 @@ const ProjectsPage = () => {
   const projects = [
     {
       title: "Frontend para Guitarzone.cl",
-      category: "PROYECTO PERSONAL - FREELANCE",
+      category: "PROYECTO PERSONAL - FRONTEND SPA",
       bullets: [
-        "Frontend desarrollado con JavaScript, React, Vite, Nginx y Docker Compose.",
-        "Diseñada para consumir mi api de api.guitarzone.cl creada con Django Rest Framework.",
-        "Cuenta con dominio propio y uso de Axios para las llamadas asíncronas a la API.",
-        "Servido a través de mi servidor personal por medio de un Túnel Cloudflare de forma independiente al backend.",
-        "Implementa formularios, modales, cards, carruseles, navbar y footer respetando el HTML semántico."
+        "Desarrollé una SPA con React para consumir una API REST propia, separando completamente frontend y backend.",
+        "Implementé componentes reutilizables como formularios, modales, carruseles y sistema de navegación.",
+        "Gestioné la comunicación con el backend mediante Axios, manejando estados y llamadas asíncronas.",
+        "Desplegué el frontend de forma independiente utilizando Docker y Nginx en un servidor propio.",
+        "Publiqué la aplicación en dominio propio utilizando Cloudflare para exposición segura."
       ],
       stack: ["React", "JavaScript", "Vite", "Axios", "Nginx", "Docker", "Cloudflare", "VPS"],
       demo: "https://guitarzone.cl/",
@@ -24,28 +24,28 @@ const ProjectsPage = () => {
     },
     {
       title: "API y Backend para Guitarzone.cl",
-      category: "PROYECTO PERSONAL - FREELANCE",
+      category: "PROYECTO PERSONAL - MVP E-COMMERCE",
       bullets: [
-        "API y backend desarrollado con Django, Django Rest Framework, PostgreSQL, Nginx y Docker Compose.",
-        "Cuenta con dominio propio api.guitarzone.cl y servida desde servidor personal por medio de un Túnel Cloudflare.",
-        "CRUD completo para la creación y administración de productos musicales, órdenes de compra y usuarios.",
-        "Implementa carrito de compra, checkout, dashboard de usuario y API de MercadoPago para pagos.",
-        "Cuenta con sistema de reserva y liberación de stock con herramientas de Celery y Redis.",
-        "Implementación de proxy inverso con Nginx para mayor seguridad y eficiencia."
+        "Diseñé e implementé una API REST con Django y DRF para soportar un e-commerce completo, incluyendo productos, usuarios y órdenes.",
+        "Desarrollé un sistema de carrito y checkout con integración de pagos mediante MercadoPago.",
+        "Implementé un sistema de reserva de stock utilizando Celery y Redis para evitar problemas de concurrencia en compras simultáneas.",
+        "Estructuré el backend siguiendo una arquitectura desacoplada, permitiendo su consumo desde un frontend independiente en React.",
+        "Desplegué la aplicación en un servidor propio utilizando Docker Compose, Nginx como proxy inverso y exposición pública mediante Cloudflare."
       ],
       stack: ["Django", "DRF", "Micro servicios", "PostgreSQL", "Redis", "Celery", "MercadoPago", "Nginx", "Docker Compose", "VPS"],
-      demo: "https://api.guitarzone.cl/", // El backend soporta este sitio
-      repo: "https://github.com/raul-1601/proyecto-inmobiliario", // Nota: Revisa si este repo es el correcto para Guitarzone, es el que venía en tu HTML
+      demo: "https://api.guitarzone.cl/", 
+      repo: "https://github.com/raul240sx/mi-ecommerce",
       image: image4
     },
     {
       title: "Portal de arriendo de inmuebles",
       category: "PROYECTO FINAL - BOOTCAMP FULLSTACK PYTHON",
       bullets: [
-        "Aplicación web desarrollada con Django, PostgreSQL, PGAdmin y Docker Compose para gestión de arriendos.",
-        "Sistema de registro con dos tipos de usuarios: Arrendador y Arrendatario.",
-        "CRUD completo para la creación y administración de inmuebles y solicitudes de arriendo.",
-        "Flujo de interacción: el arrendador gestiona solicitudes (aceptar/rechazar) y el arrendatario postula a inmuebles."
+        "Desarrollé una aplicación web con Django y PostgreSQL para la gestión de arriendos entre usuarios.",
+        "Implementé un sistema de autenticación con roles diferenciados (arrendador y arrendatario) para controlar accesos y funcionalidades.",
+        "Construí funcionalidades CRUD para la gestión de inmuebles y solicitudes de arriendo.",
+        "Diseñé el flujo de interacción entre usuarios, permitiendo a los arrendatarios postular a propiedades y a los arrendadores gestionar solicitudes.",  
+        "Desplegué la aplicación utilizando Docker Compose para facilitar su ejecución en distintos entornos."
       ],
       stack: ["Django", "PostgreSQL", "Docker", "Docker Compose", "PGAdmin", "Bootstrap"],
       demo: "https://proyecto-inmobiliario-ybsw.onrender.com",
@@ -56,10 +56,11 @@ const ProjectsPage = () => {
       title: "E-commerce de postres",
       category: "PROYECTO DE PRÁCTICA - BOOTCAMP FULLSTACK PYTHON",
       bullets: [
-        "Aplicación web desarrollada con Django y SQLite para venta de postres normales y premium.",
-        "Sistema de registro de usuarios: acceso restringido a productos de mayor calidad solo para registrados.",
-        "Implementación de formulario de contacto con persistencia de datos en base de datos.",
-        "Vistas de detalle dinámicas para cada producto del catálogo."
+        "Desarrollé una aplicación web con Django para la venta de productos, utilizando SQLite como base de datos.",
+        "Implementé un sistema de autenticación de usuarios con diferenciación de contenido entre usuarios registrados y visitantes.",
+        "Construí vistas dinámicas para el catálogo y detalle de productos.",
+        "Desarrollé un formulario de contacto con persistencia de datos en la base de datos.",
+        "Diseñé la interfaz utilizando HTML, CSS y Bootstrap, aplicando principios básicos de estructura semántica."
       ],
       stack: ["Django", "SQLite", "HTML", "CSS", "Bootstrap"],
       demo: "https://proyecto-tienda-virtual.onrender.com/",

@@ -9,8 +9,7 @@ function NavbarDesktop() {
   { name: 'Acerca de mí', path: '#home' },
   { name: 'Perfil Profesional', path: '#expertise' },
   { name: 'Proyectos', path: '#projects' },
-  { name: 'Formación', path: '#education' },
-  { name: 'Experiencias', path: '#experiences' }
+  { name: 'Formación y Trayectoria', path: '#background' },
 ];
 
 

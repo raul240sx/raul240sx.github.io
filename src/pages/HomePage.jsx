@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom'
 import { GitHubIcon, LinkedInIcon, PhoneIcon, EmailIcon, BookmarkIcon } from '../components/common/icons.jsx'
 import CopyButton from '../components/common/CopyButton.jsx';
 import './HomePage.css'
@@ -10,10 +8,14 @@ function HomePage() {
 		<div className='about-me-container container-section'>
 			<div className='about-me-content content-section'>
 				<h1 className='section-title'>
-					<p className='title-first-color'>Raúl</p>
-					<p className='title-second-color'>Ignacio</p>
-					<p className='title-first-color'>Ramírez</p>
-					<p className='title-second-color'>Sanhueza</p>
+					<div className='title-first-line'>
+						<p className='title-first-color'>Raúl</p>
+						<p className='title-second-color'>Ignacio</p>
+					</div>
+					<div className='title-second-line'>
+						<p className='title-first-color'>Ramírez</p>
+						<p className='title-second-color'>Sanhueza</p>
+					</div>					
 				</h1>
 				<p className='about-subtitle'>Desarrollador Backend | Python, Django & REST APIs</p>
 
