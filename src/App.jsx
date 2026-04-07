@@ -1,30 +1,38 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import ExpertisePage from './pages/ExpertisePage.jsx'
+import ProjectsPage from './pages/ProjectsPage.jsx';
 import NavbarDesktop from './components/navbar/NavbarDesktop.jsx';
 import NavbarMobile from './components/navbar/NavbarMobile.jsx';
 import { ThemeProvider } from './context/ThemeContext.jsx';
 import './App.css'
 
 function App() {
-
   return (
     <ThemeProvider>
       <Router>
-
         <NavbarDesktop/>
         <NavbarMobile/>
 
         <main className='main-content'>
-          <Routes>
-            <Route path='/' element={<HomePage/>}/>
-            <Route path='/expertise' element={<ExpertisePage/>}/>
-          </Routes>
-        </main>
+          {/* Envolvemos cada componente en una sección con ID para el scroll */}
+          <section id="home">
+            <HomePage />
+          </section>
+          
+          <section id="expertise">
+            <ExpertisePage />
+          </section>
 
+          <section id="projects">
+            <ProjectsPage />
+          </section>
+
+          {/* Agrega aquí el resto cuando los tengas listos */}
+          {/* <section id="projects"><ProjectsPage /></section> */}
+        </main>
       </Router>
     </ThemeProvider>
   )
 }
-
 export default App

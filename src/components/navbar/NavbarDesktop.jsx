@@ -6,12 +6,12 @@ import './NavbarDesktop.css'
 function NavbarDesktop() {
   const { theme, toggleTheme } = useTheme();
   const navItems = [
-    { name: 'Acerca de mí', path: '/' },
-    { name: 'Perfil Profesional', path: '/expertise' },
-    { name: 'Proyectos', path: '/projects' },
-    { name: 'Formación', path: '/education' },
-    { name: 'Experiencias', path: '/experiences' }
-  ]
+  { name: 'Acerca de mí', path: '#home' },
+  { name: 'Perfil Profesional', path: '#expertise' },
+  { name: 'Proyectos', path: '#projects' },
+  { name: 'Formación', path: '#education' },
+  { name: 'Experiencias', path: '#experiences' }
+];
 
 
   return(
@@ -23,7 +23,7 @@ function NavbarDesktop() {
         <div className='navbar-desktop-items'>
           <p id='my-name'>Raúl Ramírez Sanhueza</p>
           {navItems.map((item, idx)=> (
-            <Link to ={item.path} className='nav-item' key={idx} >{item.name}</Link>
+            <a href={item.path} className='nav-item' key={idx}>{item.name}</a>
           ))}
 
         </div>

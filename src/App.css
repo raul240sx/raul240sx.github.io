@@ -6,11 +6,18 @@
   display: none;
 }
 
+.main-content section {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
 .container-section {
   width: 100%;
   padding: 2rem;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -64,6 +71,13 @@
 
   .main-content {
     margin-left: 0;
+  }
+
+  .main-content section {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 80px;
+    align-items: flex-start;
   }
 
   .container-section {
