@@ -14,13 +14,15 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
+    color: #e6eef0;
 }
 
 
 .profile-picture {
     margin-top: 2rem;
-    width: 215px;
-    height: 215px;
+    margin-bottom: 2rem;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid rgba(255, 255, 255, 0.2);
@@ -48,7 +50,7 @@
 }
 
 .navbar-desktop-items a {
-    color: var(--dark-text);
+    color: #e6eef0;
     text-decoration: none;
 }
 
@@ -70,5 +72,5 @@
     padding: 1rem 2rem;
     font-size: medium;
     font-family: var(--font-body);
-    color: var(--dark-text);
+    color: #e6eef0;
 }
