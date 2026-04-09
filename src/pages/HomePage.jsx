@@ -69,7 +69,7 @@ function HomePage() {
 							</a>
 						</li>
 						<li className='contact-item'>
-							<a href='src/assets/CV_Raul_Ramirez_Sanhueza.pdf' download>
+							<a href='/CV_Raul_Ramirez_Sanhueza.pdf' download>
 								<BookmarkIcon />
 								Descargar CV
 							</a>
