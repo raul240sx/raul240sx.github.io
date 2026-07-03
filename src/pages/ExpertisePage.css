@@ -5,6 +5,7 @@
 
 /* --- LADO IZQUIERDO: VALUE CARDS --- */
 
+
 .value-cards-container {
     display: flex;
     flex-direction: column;
@@ -44,7 +45,7 @@
     margin: 0;
 }
 
-/* --- AJUSTES AL TECH STACK (LADO DERECHO) --- */
+/* --- TECH STACK (LADO DERECHO) --- */
 
 .stack-container {
     display: flex;

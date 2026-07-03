@@ -13,19 +13,21 @@ const BackgroundPage = () => {
 
         <div className='info-section'>
           <p>
-            Ingeniero en Electrónica con formación en desarrollo web fullstack, orientado al
-            desarrollo backend con Python y Django.
+            Mi perfil profesional se construye a partir de la ingeniería electrónica y la
+            experiencia en entornos industriales, donde desarrollé habilidades de análisis,
+            resolución de problemas y liderazgo técnico en equipos de trabajo.
           </p>
 
           <p>
-            He trabajado en proyectos propios enfocados en resolver problemas reales,
-            incluyendo un e-commerce funcional desplegado en infraestructura propia.
+            Posteriormente me formé en desarrollo de software, especializándome en
+            backend con Java (Spring Boot) y Python (Django REST Framework), enfocándome
+            en la construcción de APIs y sistemas escalables.
           </p>
 
           <p>
-            Mi experiencia previa liderando equipos técnicos en entornos industriales me
-            permite abordar el desarrollo con foco en la eficiencia, la organización y la
-            resolución de problemas.
+            He desarrollado proyectos personales de nivel productivo, incluyendo APIs
+            REST con Spring Boot y arquitecturas de microservicios con Django, desplegadas
+            en entornos reales utilizando Docker y servidores Linux.
           </p>
         </div>
       </div>
@@ -36,6 +38,7 @@ const BackgroundPage = () => {
         <div className='extra-block'>
           <h2>Formación</h2>
           <ul>
+            <li>Especialización Backend Java (Spring Boot) — TodoCode Academy</li>
             <li>Bootcamp Fullstack Python — Desafío Latam</li>
             <li>Ingeniería de Ejecución en Electrónica — Universidad del Bío Bío</li>
           </ul>
@@ -45,16 +48,17 @@ const BackgroundPage = () => {
           <h2>Otros</h2>
           <ul>
             <li>Inglés: Nivel B2</li>
-            <li>Experiencia liderando equipos técnicos</li>
-            <li>Trabajo en entornos productivos</li>
+            <li>Experiencia en liderazgo de equipos técnicos industriales</li>
+            <li>Trabajo en entornos operativos y de alta exigencia</li>
           </ul>
         </div>
 
         <div className='extra-block'>
           <h2>Objetivo</h2>
           <p>
-            Buscando oportunidades como desarrollador backend o fullstack donde pueda
-            aportar en la construcción de sistemas reales y seguir creciendo profesionalmente.
+            Busco oportunidades como desarrollador backend donde pueda aportar en la
+            construcción de sistemas robustos y escalables, mientras continúo fortaleciendo
+            mi especialización en Java y arquitecturas backend modernas.
           </p>
         </div>
 

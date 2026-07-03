@@ -1,7 +1,6 @@
 /* Contenedor Principal con mejor aire */
 .about-me-container {
     display: flex;
-    gap: 5rem; /* Espacio generoso entre columnas en lugar de línea */
     align-items: center; /* Alinea arriba para que el stack no flote en el medio */
 }
 

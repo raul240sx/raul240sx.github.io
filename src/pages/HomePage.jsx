@@ -17,23 +17,22 @@ function HomePage() {
 						<p className='title-second-color'>Sanhueza</p>
 					</div>					
 				</h1>
-				<p className='about-subtitle'>Desarrollador Backend | Python, Django & REST APIs</p>
+				<p className='about-subtitle'>Backend Developer | Java & Python</p>
 
 				<div className='info-section'>
 					<p>
-						Desarrollador backend enfocado en Python y Django, con experiencia en el diseño de APIs REST,
-						arquitectura basada en microservicios y despliegue de aplicaciones web en entornos reales.
+						Desarrollador backend especializado en Java (Spring Boot) y Python (Django REST Framework). Desarrollo APIs
+						REST, sistemas basados en microservicios y aplicaciones desplegadas en entornos Linux utilizando Docker.
 					</p>
+
 					<p>
-						He desarrollado proyectos como un e-commerce funcional donde implementé autenticación con JWT,
-						 integración de pagos y manejo de concurrencia mediante tareas asíncronas. Además, he trabajado
-						 con frontend desacoplado en React consumiendo mis propias APIs.
+						He construido soluciones como una API REST con Spring Boot y un e-commerce basado en microservicios con
+						Django REST Framework, integrando autenticación JWT, pagos en línea y procesamiento asíncrono.
 					</p>
+
 					<p>
-						Vengo del área de la ingeniería electrónica, lo que me aporta una base sólida en resolución de
-						problemas, pensamiento lógico y trabajo en entornos técnicos exigentes. Actualmente busco
-						consolidarme como desarrollador backend, participando en proyectos donde pueda aportar soluciones
-						robustas y seguir profundizando en buenas prácticas de desarrollo.
+						Tras iniciar mi carrera como Ingeniero en Electrónica, hoy aplico esa experiencia al desarrollo de software,
+						con un enfoque en confiabilidad, mantenibilidad y buenas prácticas de ingeniería.
 					</p>
 				</div>
 

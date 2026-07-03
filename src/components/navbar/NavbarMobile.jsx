@@ -5,15 +5,35 @@ import './NavbarMobile.css'
 
 
 
-function NavbarMobile() {
+function NavbarMobile({ currentSection }) {
   const { theme, toggleTheme } = useTheme();
   const [ isOpen, setIsOpen ] = useState(false);
   const navItems = [
-    { name: 'Acerca de mí', path: '#home' },
-    { name: 'Perfil Profesional', path: '#expertise' },
-    { name: 'Proyectos', path: '#projects' },
-    { name: 'Formación y Trayectoria', path: '#background' },
+    { name: 'Acerca de mí', path: 'home' },
+    { name: 'Perfil Profesional', path: 'expertise' },
+    { name: 'Proyectos', path: 'projects' },
+    { name: 'Formación y Trayectoria', path: 'background' },
   ];
+
+  const handleClick = (e, item) => {
+    e.preventDefault();
+    setIsOpen(false)
+
+    const targetId = item.path.replace('#', '');
+    const element = document.getElementById(targetId);
+
+    if (element) {
+      element.scrollIntoView({ behavior : 'smooth' });
+    }
+
+  };
+
+
+  // LOG PARA DEPURAR:
+  console.log('Comparando:', { currentSection, navItems });
+
+
+
 
   return(
     <div className='navbar-mobile-container'>
@@ -30,7 +50,7 @@ function NavbarMobile() {
       <div className='mobile-menu-items'>
         <p>Secciones</p>
         {navItems.map((item, idx)=> (
-          <a href={item.path} className='nav-item-mobile' key={idx} onClick={() => setIsOpen(false)}>{item.name} </a>
+          <a href={`#${item.path}`} className={`nav-item-mobile ${item.path === currentSection ? 'active' : ''}`} key={idx} onClick={(e) => handleClick(e, item)}>{item.name} </a>
         ))}
 
         <div className='other-functions-mobile'>

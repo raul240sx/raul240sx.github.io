@@ -3,10 +3,35 @@ import image1 from '../assets/proyecto1-3.png';
 import image2 from '../assets/proyecto2-1.png';
 import image3 from '../assets/proyecto3-1.png';
 import image4 from '../assets/proyecto4-4.png';
+import image5 from '../assets/proyecto5-1.png';
 
 
 const ProjectsPage = () => {
   const projects = [
+    {
+      title: "Sales Management API",
+      category: "PROYECTO PERSONAL - API REST",
+      bullets: [
+        "Diseñé e implementé una API REST con Spring Boot para gestionar productos, clientes y ventas mediante una arquitectura en capas y DTOs.",
+        "Desarrollé un sistema completo de CRUD con validaciones, manejo global de excepciones y respuestas HTTP estandarizadas utilizando ProblemDetail y ResponseEntity.",
+        "Implementé funcionalidades de negocio como generación automática de códigos, reportes de ventas, consulta de productos con bajo stock y borrado lógico (Soft Delete).",
+        "Integré persistencia con MySQL utilizando Spring Data JPA, consultas personalizadas con JPQL y migraciones automáticas mediante Flyway.",
+        "Desplegué la aplicación en un servidor VPS utilizando Docker Compose, preparada para ser consumida por aplicaciones web y móviles."
+      ],
+      stack: [
+        "Java",
+        "Spring Boot",
+        "Spring Data JPA",
+        "Spring Validation",
+        "MySQL",
+        "Flyway",
+        "Docker Compose",
+        "Maven"
+      ],
+      demo: "https://salesmanagement.ramirezdev.cl",
+      repo: "https://github.com/raul240sx/springboot_final_project",
+      image: image5
+    },
     {
       title: "Frontend para Guitarzone.cl",
       category: "PROYECTO PERSONAL - FRONTEND SPA",
@@ -48,25 +73,10 @@ const ProjectsPage = () => {
         "Desplegué la aplicación utilizando Docker Compose para facilitar su ejecución en distintos entornos."
       ],
       stack: ["Django", "PostgreSQL", "Docker", "Docker Compose", "PGAdmin", "Bootstrap"],
-      demo: "https://proyecto-inmobiliario-ybsw.onrender.com",
+      demo: "https://proyectoinmobiliario.ramirezdev.cl",
       repo: "https://github.com/raul-1601/proyecto-inmobiliario",
       image: image1
     },
-    {
-      title: "E-commerce de postres",
-      category: "PROYECTO DE PRÁCTICA - BOOTCAMP FULLSTACK PYTHON",
-      bullets: [
-        "Desarrollé una aplicación web con Django para la venta de productos, utilizando SQLite como base de datos.",
-        "Implementé un sistema de autenticación de usuarios con diferenciación de contenido entre usuarios registrados y visitantes.",
-        "Construí vistas dinámicas para el catálogo y detalle de productos.",
-        "Desarrollé un formulario de contacto con persistencia de datos en la base de datos.",
-        "Diseñé la interfaz utilizando HTML, CSS y Bootstrap, aplicando principios básicos de estructura semántica."
-      ],
-      stack: ["Django", "SQLite", "HTML", "CSS", "Bootstrap"],
-      demo: "https://proyecto-tienda-virtual.onrender.com/",
-      repo: "https://github.com/rramirez1401/proyecto-tienda-virtual",
-      image: image2
-    }
   ];
 
   return (

@@ -59,7 +59,7 @@
 
 .mobile-menu-items p,
 .nav-item-mobile {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     color: #e6eef0;
 }
 
@@ -74,6 +74,13 @@
     text-decoration: none;
     font-weight: 600;
     font-size: large;
+}
+
+.mobile-menu-items .nav-item-mobile.active {
+    width: 100%;
+    
+    color: #444;
+    background-color: var(--primary-light);
 }
 
 
